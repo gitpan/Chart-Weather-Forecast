@@ -5,7 +5,6 @@ META.yml
 Makefile.PL
 README
 dist.ini
-examples/get_temperature_forecast.pl
 lib/Chart/Weather/Forecast.pm
 lib/Chart/Weather/Forecast/Temperature.pm
 t/author-critic.t
