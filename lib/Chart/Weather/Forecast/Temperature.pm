@@ -1,4 +1,8 @@
+use strictures 1;
 package Chart::Weather::Forecast::Temperature;
+BEGIN {
+  $Chart::Weather::Forecast::Temperature::VERSION = '0.03';
+}
 use Moose;
 use namespace::autoclean;
 
@@ -47,6 +51,12 @@ ArrayRef[Num] of low temperatures
 Where you want to write out the chart image.
 
     Default: /tmp/temperature-forecast.png' on *nix
+    
+NOTE: The chart_temperature_file attribute isa 'Path::Class::File'
+so if you want to specifiy an output file then do so like:
+
+   chart_temperature_file => Path::Class::File->new( $your_dir, $your_file_name);
+   chart_temperature_file => Path::Class::File->new( '/tmp/', 'forecast_temps.png');
 
 =head2 chart_width
 
@@ -87,7 +97,7 @@ has 'lows' => (
 has 'chart_temperature_file' => (
     is      => 'ro',
     isa     => 'Path::Class::File',
-    default => sub { Path::Class::file(File::Spec->tmpdir, 'temperature-forecast.png') },
+    default => sub {  Path::Class::File->new(File::Spec->tmpdir, 'temperature-forecast.png') },
 );
 has 'chart_format' => (
     is      => 'ro',

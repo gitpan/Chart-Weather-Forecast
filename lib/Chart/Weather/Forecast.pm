@@ -1,8 +1,10 @@
+use strictures 1;
 package Chart::Weather::Forecast;
+BEGIN {
+  $Chart::Weather::Forecast::VERSION = '0.03';
+}
 use Moose;
 use namespace::autoclean;
-
-our $VERSION = '0.02';
 
 
 __PACKAGE__->meta->make_immutable;

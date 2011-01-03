@@ -4,7 +4,6 @@ author:
   - 'Mateu X Hunter <hunter@missoula.org>'
 build_requires:
   English: 0
-  Image::Imlib2: 0
   Test::More: 0
   Try::Tiny: 0
 configure_requires:
@@ -31,4 +30,5 @@ requires:
   Number::Format: 0
   Path::Class: 0
   namespace::autoclean: 0
-version: 0.02
+  strictures: 1
+version: 0.03

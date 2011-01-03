@@ -13,7 +13,6 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Mateu X Hunter <hunter@missoula.org>',
   'BUILD_REQUIRES' => {
     'English' => '0',
-    'Image::Imlib2' => '0',
     'Test::More' => '0',
     'Try::Tiny' => '0'
   },
@@ -38,9 +37,10 @@ my %WriteMakefileArgs = (
     'Moose' => '0',
     'Number::Format' => '0',
     'Path::Class' => '0',
-    'namespace::autoclean' => '0'
+    'namespace::autoclean' => '0',
+    'strictures' => '1'
   },
-  'VERSION' => '0.02',
+  'VERSION' => '0.03',
   'test' => {
     'TESTS' => 't/*.t'
   }
