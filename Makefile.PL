@@ -35,12 +35,13 @@ my %WriteMakefileArgs = (
     'Graphics::Primitive::Font' => '0',
     'List::Util' => '0',
     'Moose' => '0',
+    'MooseX::Types::Path::Class' => '0',
     'Number::Format' => '0',
     'Path::Class' => '0',
     'namespace::autoclean' => '0',
     'strictures' => '1'
   },
-  'VERSION' => '0.03',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }

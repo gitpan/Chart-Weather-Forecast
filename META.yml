@@ -27,8 +27,9 @@ requires:
   Graphics::Primitive::Font: 0
   List::Util: 0
   Moose: 0
+  MooseX::Types::Path::Class: 0
   Number::Format: 0
   Path::Class: 0
   namespace::autoclean: 0
   strictures: 1
-version: 0.03
+version: 0.04

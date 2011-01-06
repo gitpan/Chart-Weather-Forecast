@@ -1,7 +1,7 @@
 use strictures 1;
 package Chart::Weather::Forecast;
 BEGIN {
-  $Chart::Weather::Forecast::VERSION = '0.03';
+  $Chart::Weather::Forecast::VERSION = '0.04';
 }
 use Moose;
 use namespace::autoclean;
